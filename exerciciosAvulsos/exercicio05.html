@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txtVel">
+    <input type="button" id="but" onclick="calcular()" value="OK">
+    <div id="res"></div>
+    <div id="multa"></div>
+    <script>
+        function calcular(){
+        var velocidade = document.getElementById('txtVel')
+        var res = document.querySelector('div#res')
+        var velocidadeConvertida = Number(velocidade.value)
+        var multa = document.getElementById('multa')
+
+        if(velocidadeConvertida > 60){
+            multa.innerHTML = `você está acima de 60km/h. Velocidade atual: ${velocidadeConvertida}km/h`
+        }
+        else{
+            multa.innerHTML = `velocidade de boa!`
+        }
+    }
+    </script>
+</body>
+</html>

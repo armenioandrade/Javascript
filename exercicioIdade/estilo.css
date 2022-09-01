@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font: normal 15pt Calibri;
+}
+body{
+    background: rgb(38, 38, 199);
+}
+
+header{
+    color: white;
+    font: normal 15pt Calibri;
+}
+
+section{
+    border-radius: 10px;
+    background: white;
+    box-shadow: 5px 5px black;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 15px;
+
+}
+
+div#dados{
+    text-align: left;
+    padding: 5px;
+}
+
+div#radios{
+    text-align: left;
+    padding: 5px;
+}
+div#botaoCalcular{
+    text-align: left;
+    padding: 5px;
+}
+
+div{
+    text-align: center;    
+}
+
+
+footer{
+    text-align: center;
+    color: white;
+    font: normal 13pt Calibri;
+}
+
