@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com API Javascript</title>
+</head>
+
+<body>
+    <h3>API Gato</h3>
+    <div id="resapi">
+    </div>
+    <h3>API Sugestao de Atividades</h3>
+    <div id="api2">
+    </div>
+    <h3>API Nomes</h3>
+    <input type="text" id="fieldname" autofocus>
+    <input type="button" value="getName" onclick="fetchNome(getName())" autofocus id="btnNome">
+    <div id="resNome">
+    </div>
+    <div id="demo">
+
+    </div>
+    <script defer src="script2.js"></script>
+    <script>
+        function getText(){
+        let text = document.getElementById("fieldname").textContent;
+        document.getElementById("demo").innerHTML = text;  
+        }
+        </script>
+</body>
+
+</html>
